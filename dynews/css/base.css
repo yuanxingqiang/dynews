@@ -223,6 +223,10 @@ article .hiSlider-item{
 	padding-top:16px;
 }
 
-#popNews,#globalNews,#militaryNews,#tecNews,#column{
+#popNews,#globalNews,#militaryNews,#tecNews,#column,#pos,#create,#pe{
 	border:1px solid #DDD;
+}
+
+#ad{
+	height:384px;
 }
