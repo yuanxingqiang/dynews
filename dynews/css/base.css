@@ -230,3 +230,26 @@ article .hiSlider-item{
 #ad{
 	height:384px;
 }
+
+.friendLink{
+	margin:0px auto;
+	width:1024px;
+	height:200px;
+}
+
+.netsLogo{
+	height:55px;
+	background-color:#9d9;
+}
+
+.footer{
+	width:100%;
+	height:80px;
+	background-color:#EEE;
+	color:#AAA;
+}
+
+.footerContents{
+	margin:0px auto;
+	width:1024px;
+}
