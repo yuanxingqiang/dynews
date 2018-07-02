@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9) | !(IE)]><!-->
+<html class="not-ie" lang="zh-CN">
+<!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-        <title>Bootstrap 101 Template</title>
+        <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+		<meta name="keywords" content="{$SEO['keyword']}">
+		<meta name="description" content="{$SEO['description']}">
 
         <!-- Bootstrap -->
         <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-		<link href="./dynews/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="./dynews/css/jquery.hiSlider.css">
-		<link href="./dynews/css/base.css" rel="stylesheet">
+		<link href="{WEB_PATH}statics/dynews/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="{WEB_PATH}statics/dynews/css/jquery.hiSlider.css">
+		<link href="{WEB_PATH}statics/dynews/css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
         <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
