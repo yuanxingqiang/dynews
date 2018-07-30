@@ -32,27 +32,21 @@
 							
 							<!-- 热门新闻 -->
 							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="hotNews">
+							    {pc:content  action="position" posid="2" catid="21" thumb="1" order="listorder DESC" num="5"}
 								<ul class="list-unstyled">
+								    {loop $data $r}
 									<li>
 										<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 smallPic">
-											<a href=""><img class="img-responsive" src="./dynews/img/newslist.jpeg" /></a>
+											<a href="{$r['url']}"><img class="img-responsive" src="{thumb($r['thumb'],116,40)}" /></a>
 										</div>
 										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 hotNewsTittle">
-											<a href="">
-												女性教諭→元教え子の男子高校生にわいせつ行為　群馬県教委が懲戒免職「相談に乗っていて…」
+											<a href="{$r['url']}" target="_blank">
+												{$r['title']}
 											</a>
 										</div>
 									</li>
-									<li>
-										<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 smallPic">
-											<img class="img-responsive" src="./dynews/img/newslist.jpeg" />
-										</div>
-										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 hotNewsTittle">
-											<a href="">
-												女性教諭→元教え子の男子高校生にわいせつ行為　群馬県教委が懲戒免職「相談に乗っていて…」
-											</a>
-										</div>
-									</li>
+									{/loop}
+									<!--
 									<li>
 										<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 smallPic">
 											<img class="img-responsive" src="./dynews/img/newslist.jpeg" />
@@ -83,7 +77,19 @@
 											</a>
 										</div>
 									</li>
+									<li>
+										<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 smallPic">
+											<img class="img-responsive" src="./dynews/img/newslist.jpeg" />
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 hotNewsTittle">
+											<a href="">
+												女性教諭→元教え子の男子高校生にわいせつ行為　群馬県教委が懲戒免職「相談に乗っていて…」
+											</a>
+										</div>
+									</li>
+									-->
 								</ul>
+								{/pc}
 							</div>
 							
 							<!-- 阅读排行榜 -->
